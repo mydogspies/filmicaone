@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FilmicaOne</string>
+    <string name="project_box">Project</string>
+    <string name="some_txt_box">Some text</string>
+    <string name="some_txt_hint">Some text</string>
+    <string name="project_box_hint">Some project</string>
+    <string name="save_btn_txt">Add project</string>
+</resources>
