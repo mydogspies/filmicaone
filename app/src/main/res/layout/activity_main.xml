@@ -31,7 +31,7 @@
         android:hint="@string/project_box_hint"
         android:inputType="textPersonName"
         android:singleLine="false"
-        android:text="@string/project_box"
+        android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -47,13 +47,14 @@
         android:ems="10"
         android:hint="@string/some_txt_hint"
         android:inputType="textPersonName"
-        android:text="@string/some_txt_box"
+        android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/projectText" />
 
     <Button
         android:id="@+id/saveBtn"
+        android:onClick="saveBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -61,4 +62,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/someText" />
+
+    <Button
+        android:id="@+id/loadBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="loadBtn"
+        android:text="@string/load_btn_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveBtn" />
+
+    <TextView
+        android:id="@+id/dbData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loadBtn" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
